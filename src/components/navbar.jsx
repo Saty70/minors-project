@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaSearch } from 'react-icons/fa';
 import '../statics/navbar.css'; // Import the CSS file
 
 const Navbar = () => {
@@ -21,6 +21,10 @@ const Navbar = () => {
         <a href="/services" className="nav-item">Services</a>
         <a href="/contact" className="nav-item">Contact</a>
       </div>
+      <div className="search-container">
+          <input type="text" className="search-input" placeholder="Search..." />
+          <button className="search-btn"><FaSearch /></button>
+        </div>
     </nav>
   );
 };

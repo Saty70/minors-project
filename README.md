@@ -1,112 +1,59 @@
-# React Project
+# Question Paper Analyzer
 
-## Overview
+This project is a repository for previous year question papers of a university. It includes a machine learning-based approach to analyze question papers, extracting important information such as questions and their associated marks from images.
 
-This React project provides a modern, responsive web application. Follow the instructions below to set up and run the project locally using npm.
+## Features
 
-## Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- [Node.js](https://nodejs.org/) (v14.0.0 or higher)
-- [npm](https://www.npmjs.com/) (Node Package Manager, comes with Node.js)
+- **OCR-based Extraction**: Extracts questions and associated marks from scanned images of question papers.
+- **Text and Marks Association**: Identifies and associates the marks with the corresponding questions.
 
 ## Installation
 
-To set up the project on your local machine, follow these steps:
+### Prerequisites
 
-1. **Clone the Repository**
+Ensure you have the following installed:
 
-   Clone the repository to your local machine using:
+- Python 3.7 or later
+- pip (Python package installer)
 
-   ```bash
-   git clone <repository-url>
-   ```
+### Install Required Libraries
 
-   Replace `<repository-url>` with the URL of your Git repository.
+Use the following command to install the necessary Python libraries:
 
-2. **Navigate to the Project Directory**
-
-   Change into the project directory:
-
-   ```bash
-   cd <project-directory>
-   ```
-
-   Replace `<project-directory>` with the name of your project folder.
-
-3. **Install Dependencies**
-
-   Install the required dependencies listed in `package.json`:
-
-   ```bash
-   npm install
-   ```
-
-   This command will download and install all necessary packages into the `node_modules` directory.
-
-## Running the Project
-
-To run the project locally, use the following steps:
-
-1. **Start the Development Server**
-
-   Launch the development server with:
-
-   ```bash
-   npm start
-   ```
-
-   This command will compile the project and start a local server. By default, the application will be accessible at `http://localhost:3000`.
-
-2. **Open Your Browser**
-
-   Open your web browser and navigate to `http://localhost:3000` to view the application.
-
-## Testing
-
-To run tests for your React project, use:
+#### On Linux:
 
 ```bash
-npm test
+pip install pytesseract pdf2image opencv-python-headless numpy Pillow
 ```
 
-This command will start the test runner and execute the tests defined in your project.
-
-## Building for Production
-
-To create a production build of your project, use:
+#### On Windows:
 
 ```bash
-npm run build
+pip install pytesseract pdf2image opencv-python numpy Pillow
 ```
 
-This will generate a `build` directory with optimized production files ready for deployment.
+### Install Tesseract OCR
 
-## Contributing
+#### On Linux:
 
-We welcome contributions to this project. To contribute:
+```bash
+sudo apt-get install tesseract-ocr
+```
 
-1. Fork the repository.
-2. Create a new branch for your feature or fix.
-3. Commit your changes with descriptive messages.
-4. Push your branch to your forked repository.
-5. Open a pull request.
+#### On Windows:
 
-## License
+1. Download the [Tesseract OCR installer](https://github.com/tesseract-ocr/tesseract).
+2. Install Tesseract and add the Tesseract executable to your system's PATH.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+### Install Poppler Utilities (for PDF to Image Conversion)
 
-## Contact
+#### On Linux:
 
-For any questions or issues, please contact [your-email@example.com](mailto:your-email@example.com).
+```bash
+sudo apt-get install poppler-utils
+```
 
-### Customization Notes:
+#### On Windows:
 
-- **Replace Placeholder Text**:
-  - `<repository-url>`: URL of your Git repository.
-  - `<project-directory>`: Name of your project folder.
-  - `[your-email@example.com]`: Your contact email.
-
-- **Add Specific Instructions**:
-  - Include any additional setup requirements or specific project configurations as needed.
+1. Download Poppler for Windows from [this link](http://blog.alivate.com.au/poppler-windows/).
+2. Extract the contents and add the `bin` folder to your system's PATH.

@@ -1,21 +1,23 @@
 /* General Styling */
 .navbar {
-    background: rgba(255, 255, 255, 0.2); /* More translucent white */
-    backdrop-filter: blur(8px); /* Slightly reduced blur for better visibility */
-    -webkit-backdrop-filter: blur(8px); /* Frosted glass effect for Safari */
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    font-family: 'Poppins', sans-serif;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Soft shadow */
-    border-radius: 8px; /* Rounded corners */
-    position: fixed; /* Fix navbar to the top */
-    width: calc(100% - 40px); /* Ensure it fits the screen */
-    margin: 10px auto;
-    z-index: 1000; /* Ensure navbar is above other content */
-  }
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  position: fixed;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset by half width */
+  width: calc(100% - 40px); /* Keep existing width */
+  z-index: 1000;
+}
+
   
   .logo {
     font-size: 1.5rem;

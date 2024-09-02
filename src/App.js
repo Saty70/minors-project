@@ -1,12 +1,24 @@
-import React from 'react'
-import { Navbar } from './components'
+import React from 'react';
+import { Navbar, Card } from './components';
+import cardData from './utils/cardData';
+import './app.css'
 
-function App() {
+const App = () => {
   return (
-    <div>
-        <Navbar />
+    <div className="app-container">
+      <Navbar />
+      <div className="card-container">
+        {cardData.map((card) => (
+          <Card 
+            key={card.id}
+            imageSrc={card.imageSrc} 
+            subjectName={card.subjectName}
+            pdfLink={card.pdfLink} 
+          />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

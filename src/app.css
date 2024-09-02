@@ -1,0 +1,9 @@
+/* Ensure that the cards are placed below the fixed navbar */  
+  /* Style the container holding the cards */
+  .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }

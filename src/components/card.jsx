@@ -1,5 +1,5 @@
-import React from 'react';
-import '../static/card.css';
+import React from "react";
+import "../static/card.css";
 const Card = ({ imageSrc, subjectName, pdfLink }) => {
   return (
     <div className="card">

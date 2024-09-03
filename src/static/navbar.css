@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Montserrat", sans-serif;
   /* position: fixed; */
   /* left: 50%; */
   /* gap: 20px; */
@@ -16,7 +16,6 @@
   /* Keep existing width */
   z-index: 1000;
 }
-
 
 .logo {
   font-size: 1.5rem;
@@ -55,7 +54,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 50px;
   padding: 1.5rem;
-  height: 50%
+  height: 50%;
 }
 
 .nav-item {
@@ -76,7 +75,7 @@
 }
 
 .nav-item::after {
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   width: 0;
@@ -90,7 +89,7 @@
 
 .nav-item:hover::after {
   width: 100%;
-} 
+}
 
 /* Search container */
 .search-container {
@@ -134,14 +133,13 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
-  .navbar{
+  .navbar {
     background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  padding: 1.5rem; 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 1.5rem;
   }
 
   .menu-icon {
@@ -189,7 +187,7 @@
   }
 
   .nav-item::after {
-    content: '';
+    content: "";
     background: transparent;
   }
 
